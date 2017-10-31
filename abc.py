@@ -6,7 +6,7 @@ l=np.load('./fruit_labels.npy')
 f=f.reshape((f.shape[0],f.shape[1]*f.shape[2]))
 rgb = cv2.VideoCapture(0)
 facec = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-# print facec
+
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 def recognize_face(im):
